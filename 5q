@@ -1,0 +1,11 @@
+//从0到n-1中随机等概率输出m个不同的数
+//假设输入的n远大于m
+void knuth(int n, int m)
+{
+for (int i = 0; i < n; i++) {
+if (rand() % (n - i)<m) {
+cout << i << endl;
+m--;
+}
+}
+}
